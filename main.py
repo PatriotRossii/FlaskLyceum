@@ -22,13 +22,20 @@ def promotion():
                          "Присоединяйся!\n"])
 
 
-@app.route("/image_mars")
-def image_of_mars():
-    return "\n".join(["<html>", "<head>", "<title>Привет, Марс!</title>", "</head>",
-                      "<body>", "<h1>Жди нас, Марс!</h1>",
-                      f"<image src={url_for('static', filename='img/mars.jpg')}/></br>",
-                      "Вот она какая, красная планета.",
-                      "</body>", "</html>"])
+@app.route('/image_mars')
+def image_mars():
+    return f'''<!doctype html>
+                <html lang="en">
+                  <head>
+                    <meta charset="utf-8">
+                    <title>Привет, Марс!</title>
+                  </head>
+                  <body>
+                    <h1>Жди нас, Марс!</h1>
+                    <image src={url_for('static', filename='img/mars.jpg')}/></br>
+                    Вот она какая, красная планета.
+                  </body>
+                </html>'''
 
 
 if __name__ == '__main__':
