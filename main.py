@@ -105,7 +105,7 @@ def form_sample():
                             <div>
                                 <form class="login_form" method="post">
                                     <input type="text" class="form-control" id="name" placeholder="Введите фамилию" name="name">
-                                    <input type="password" class="form-control" id="surname" placeholder="Введите имя" name="surname"></br>
+                                    <input type="text" class="form-control" id="surname" placeholder="Введите имя" name="surname"></br>
                                     <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Введите адрес почты" name="email">
                                     <div class="form-group">
                                         <label for="classSelect">Какое у вас образование</label>
